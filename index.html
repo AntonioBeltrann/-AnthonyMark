@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANTONY MARK | Agencia de Marketing Digital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="miStyle/miStyle.css">
+</head>
+<body class="dark-theme">
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-blur">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+                <img src="imagenes/logo.png" alt="Antony Mark Logo" height="40" class="me-2"> 
+                <span class="text-white">ANTONY <span class="text-neon">MARK</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#planes">Planes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portafolio">Portafolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="#contacto" class="btn btn-neon rounded-pill px-4">Cotizar ahora</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero-section d-flex align-items-center text-center text-white">
+        <div class="overlay"></div>
+        <div class="container position-relative z-2">
+            <h1 class="display-3 fw-bold mb-3 animate-up">Impulsa tu Negocio con <br> <span class="text-neon">Marketing Profesional</span></h1>
+            <p class="lead mb-4 text-light animate-up delay-1">Estrategia, contenido y presencia digital para tu marca.</p>
+            <div class="animate-up delay-2">
+                <a href="#planes" class="btn btn-neon btn-lg me-2">Ver Planes</a>
+                <a href="#portafolio" class="btn btn-outline-light btn-lg">Ver Portafolio</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="planes" class="py-5 bg-darker">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-white display-5 fw-bold">Nuestros <span class="text-neon">Planes</span></h2>
+                <p class="text-muted">Elige la estrategia perfecta para tu crecimiento</p>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="h-100 rounded-4 overflow-hidden shadow-lg position-relative">
+                         <img src="imagenes/Gemini_Generated_Image_61k9j361k9j361k9.png" alt="Iconos de crecimiento" style="width: 100%; height: 100%; object-fit: cover;">
+                         <div class="overlay-portfolio" style="transform: translateY(0); background: rgba(0,0,0,0.3);"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 plan-card">
+                        <div class="card-body p-4 text-center">
+                            <h3 class="text-neon mb-3">Started</h3>
+                            <h1 class="text-white mb-4">$ --</h1>
+                            <ul class="list-unstyled text-start text-gray-300 mb-4 plan-list">
+                                <li><i class="fas fa-check text-neon me-2"></i>Portafolio comercial</li>
+                                <li><i class="fas fa-check text-neon me-2"></i>FB, IG, WhatsApp, TikTok</li>
+                                <li><i class="fas fa-check text-neon me-2"></i>3 Reels + 1 Video Largo</li>
+                                <li><i class="fas fa-check text-neon me-2"></i>10 Fotografías + 3 Flyers</li>
+                            </ul>
+                            <button class="btn btn-outline-neon w-100" onclick="selectPlan('Started')">Elegir Plan</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 plan-card popular">
+                        <div class="position-absolute top-0 start-50 translate-middle badge bg-neon text-dark px-3 py-2">RECOMENDADO</div>
+                        <div class="card-body p-4 text-center">
+                            <h3 class="text-neon mb-3">Premium</h3>
+                            <h1 class="text-white mb-4">$ --</h1>
+                            <ul class="list-unstyled text-start text-gray-300 mb-4 plan-list">
+                                <li><i class="fas fa-check text-neon me-2"></i>Todo lo del plan Started</li>
+                                <li><i class="fas fa-check text-neon me-2"></i>Estrategia Avanzada</li>
+                                <li><i class="fas fa-check text-neon me-2"></i>3 Reels + 3 Videos Largos</li>
+                                <li><i class="fas fa-check text-neon me-2"></i><strong>20 Fotografías</strong></li>
+                                <li><i class="fas fa-check text-neon me-2"></i><strong>5 Flyers</strong></li>
+                            </ul>
+                            <button class="btn btn-neon w-100" onclick="selectPlan('Premium')">Elegir Plan</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-3"> <div class="card h-100 plan-card">
+                        <div class="card-body p-4 text-center d-flex flex-column justify-content-center">
+                            <h3 class="text-neon mb-3">Personalizado</h3>
+                            <p class="text-gray-300 mb-4">Un plan diseñado especialmente para ti y ajustado a tu presupuesto.</p>
+                            <button class="btn btn-outline-light w-100 mt-auto" onclick="selectPlan('Personalizado')">Cotizar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portafolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-white display-5 fw-bold mb-5">Nuestro <span class="text-neon">Trabajo</span></h2>
+            <div class="row g-3">
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-item">
+                        <img src="imagenes/el-hombre-sostiene-una-camara-y-esta-listo-para-disparar-el-fotografo-mira-por-el-visor-de-la-camara-y-toma-fotografias.jpg" alt="Fotografía Profesional">
+                        <div class="overlay-portfolio">
+                            <h5>Fotografía Profesional</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-item">
+                        <img src="imagenes/mochilero-relajarse-en-la-montana-con-camara-y-puesta-de-sol.jpg" alt="Estilo de Vida">
+                        <div class="overlay-portfolio">
+                            <h5>Lifestyle & Marcas</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-item">
+                        <img src="imagenes/Gemini_Generated_Image_ahkdh3ahkdh3ahkd.png" alt="Equipo Creativo">
+                        <div class="overlay-portfolio">
+                            <h5>Estrategia de Equipo</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-item">
+                        <img src="imagenes/Gemini_Generated_Image_s8ckzus8ckzus8ck.png" alt="Branding">
+                        <div class="overlay-portfolio">
+                            <h5>Branding Corporativo</h5>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-item">
+                        <img src="imagenes/el-hombre-sostiene-una-camara-y-esta-listo-para-disparar-el-fotografo-mira-por-el-visor-de-la-camara-y-toma-fotografias.jpg" alt="Producción">
+                        <div class="overlay-portfolio">
+                            <h5>Producción Audiovisual</h5>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-item">
+                        <img src="images/mochilero-relajarse-en-la-montana-con-camara-y-puesta-de-sol.jpg" alt="Social Media">
+                        <div class="overlay-portfolio">
+                            <h5>Creación de Contenido</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-5 contact-bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-lg bg-glass text-white border-0">
+                        <div class="card-body p-5">
+                            <h2 class="text-center mb-4">Contáctanos</h2>
+                            <p class="text-center text-white mb-5">Lleva tu marca al siguiente nivel hoy mismo.</p>
+                            
+                            <form id="contactForm">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label text-neon">Nombre</label>
+                                        <input type="text" class="form-control bg-transparent-input" id="nombre" required placeholder="Tu nombre">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label text-neon">Teléfono</label>
+                                        <input type="tel" class="form-control bg-transparent-input" id="telefono" required placeholder="409-916-2945">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label text-neon">Correo Electrónico</label>
+                                    <input type="email" class="form-control bg-transparent-input" id="email" required placeholder="ejemplo@correo.com">
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label text-neon">Mensaje</label>
+                                    <textarea class="form-control bg-transparent-input" id="mensaje" rows="4" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-neon w-100 py-2 fw-bold">ENVIAR MENSAJE</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 text-center text-white" style="background-color: #000;">
+        <div class="container">
+            <div class="mb-3">
+                <a href="https://www.facebook.com/profile.php?id=61557096927530" target="_blank" class="text-white mx-3 fs-4 hover-neon"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/antony_mark001" target="_blank" class="text-white mx-3 fs-4 hover-neon"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/524099162945" target="_blank" class="text-white mx-3 fs-4 hover-neon"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="mb-1 text-muted">Tel: 409-916-2945</p>
+            <p class="mb-0 text-muted">&copy; 2025 Antony Mark. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="miScript.js/"></script>
+</body>
+</html>

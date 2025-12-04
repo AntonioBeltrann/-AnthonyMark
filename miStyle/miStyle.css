@@ -1,0 +1,218 @@
+/* Variables de color */
+:root {
+    --neon-green: #1BDF5A;
+    --dark-bg: #121212;
+    --darker-bg: #0a0a0a;
+    --card-bg: #1e1e1e;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--dark-bg);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Tipografía y Utilidades */
+.text-neon {
+    color: var(--neon-green) !important;
+}
+
+.bg-darker {
+    background-color: var(--darker-bg);
+}
+
+.text-gray-300 {
+    color: #d1d1d1;
+}
+
+/* Navbar */
+.bg-blur {
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(27, 223, 90, 0.1);
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--neon-green) !important;
+}
+
+/* Botones Personalizados */
+.btn-neon {
+    background-color: var(--neon-green);
+    color: #000;
+    border: 2px solid var(--neon-green);
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.btn-neon:hover {
+    background-color: transparent;
+    color: var(--neon-green);
+    box-shadow: 0 0 15px rgba(27, 223, 90, 0.4);
+}
+
+.btn-outline-neon {
+    border: 2px solid var(--neon-green);
+    color: var(--neon-green);
+    font-weight: 600;
+}
+
+.btn-outline-neon:hover {
+    background-color: var(--neon-green);
+    color: #000;
+}
+
+/* ========== HERO SECTION (IMAGEN ACTUALIZADA) ========== */
+.hero-section {
+    height: 100vh;
+    /* Usando la imagen de la ciudad con el logo AM en las nubes */
+    background: url('images/Gemini_Generated_Image_s8ckzus8ckzus8ck.jpg') no-repeat center center/cover;
+    position: relative;
+    margin-top: -70px;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.9));
+}
+
+/* Planes - Cards */
+.plan-card {
+    background-color: var(--card-bg);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--neon-green);
+    box-shadow: 0 10px 30px rgba(27, 223, 90, 0.15);
+}
+
+.plan-list li {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+
+/* Portafolio */
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 250px;
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.overlay-portfolio {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover .overlay-portfolio {
+    transform: translateY(0);
+}
+
+.portfolio-item h5 {
+    color: #fff;
+    margin: 0;
+    font-weight: bold;
+    border-left: 3px solid var(--neon-green);
+    padding-left: 10px;
+}
+
+/* ========== CONTACTO (FONDO NUEVO) ========== */
+.contact-bg {
+    /* Usando la imagen del equipo */
+    background: url('images/Gemini_Generated_Image_ahkdh3ahkdh3ahkd.jpg') no-repeat center center/cover;
+    position: relative;
+    background-attachment: fixed; /* Efecto parallax */
+}
+
+/* Overlay oscuro para que el formulario se lea bien sobre la imagen */
+.contact-bg::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.75); /* Oscurece la imagen de fondo */
+    z-index: 0;
+}
+
+.contact-bg .container {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-glass {
+    background: rgba(20, 20, 20, 0.85); /* Fondo semitransparente para el form */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Estilos de inputs en el formulario */
+.bg-transparent-input {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.bg-transparent-input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-color: var(--neon-green);
+    box-shadow: none;
+}
+
+/* Footer & Social */
+.hover-neon {
+    transition: color 0.3s;
+}
+.hover-neon:hover {
+    color: var(--neon-green) !important;
+}
+
+/* Animaciones Simples */
+.animate-up {
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
